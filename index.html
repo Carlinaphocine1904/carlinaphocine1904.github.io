@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="VFA Football — Football Fusion Roblox league." />
+  <title>VFA Football | Home</title>
+  <link rel="icon" type="image/webp" href="vfa-football.webp" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#home">
+        <img src="vfa-football.webp" alt="VFA Football logo" />
+        <div>
+          <strong>VFA</strong>
+          <span>Football Fusion League</span>
+        </div>
+      </a>
+
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#schedule">Schedule</a>
+        <a href="#standings">Standings</a>
+        <a href="#teams">Teams</a>
+      </nav>
+
+      <a class="discord-btn" href="https://discord.gg/vfaff" target="_blank" rel="noopener">
+        Join Discord
+      </a>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">VFA • FOOTBALL FUSION ROBLOX</p>
+          <h1>The home of <span>VFA Football.</span></h1>
+          <p class="hero-text">
+            32 teams. One league. Follow the latest matchups, standings, and league news all in one place.
+          </p>
+          <div class="hero-actions">
+            <a class="primary-btn" href="#schedule">View Schedule</a>
+            <a class="secondary-btn" href="https://discord.gg/vfaff" target="_blank" rel="noopener">Join the Discord</a>
+          </div>
+        </div>
+        <div class="hero-card">
+          <img src="vfa-football.webp" alt="VFA Football" />
+          <div>
+            <span>LEAGUE</span>
+            <strong>32 TEAMS</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="quick-stats">
+      <div class="container stat-grid">
+        <article><span>Teams</span><strong>32</strong></article>
+        <article><span>Game</span><strong>Football Fusion</strong></article>
+        <article><span>Community</span><strong>Discord</strong></article>
+        <article><span>League Hub</span><strong>VFA</strong></article>
+      </div>
+    </section>
+
+    <section id="schedule" class="section">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">UP NEXT</p>
+            <h2>League Schedule</h2>
+          </div>
+          <button class="text-btn" onclick="showAllSchedule()">View all</button>
+        </div>
+
+        <div id="schedule-list" class="schedule-list"></div>
+        <p id="schedule-note" class="small-note">
+          The schedule is ready to be replaced with your real VFA matchups in <code>app.js</code>.
+        </p>
+      </div>
+    </section>
+
+    <section id="standings" class="section alt">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">CURRENT SEASON</p>
+            <h2>Standings</h2>
+          </div>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>#</th><th>Team</th><th>W</th><th>L</th><th>PF</th><th>PA</th></tr>
+            </thead>
+            <tbody id="standings-body"></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section id="teams" class="section">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">THE LEAGUE</p>
+            <h2>32 Teams</h2>
+          </div>
+        </div>
+        <div id="teams-grid" class="teams-grid"></div>
+      </div>
+    </section>
+
+    <section class="discord-banner">
+      <div class="container discord-inner">
+        <div>
+          <p class="eyebrow">JOIN THE COMMUNITY</p>
+          <h2>Everything VFA starts on Discord.</h2>
+          <p>Get announcements, game times, league updates, and community discussion.</p>
+        </div>
+        <a class="primary-btn" href="https://discord.gg/vfaff" target="_blank" rel="noopener">discord.gg/vfaff</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <div>© <span id="year"></span> VFA Football</div>
+      <div>Football Fusion Roblox League</div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
