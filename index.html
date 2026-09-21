@@ -22,9 +22,11 @@
       <nav>
         <a href="#home">Home</a>
         <a href="#schedule">Schedule</a>
+        <a href="#series2-story">Series 2</a>
         <a href="#standings">Standings</a>
         <a href="#teams">Teams</a>
-      </nav>
+<a href="#media">Media</a>
+</nav>
 
       <a class="discord-btn" href="https://discord.gg/vfaff" target="_blank" rel="noopener">
         Join Discord
@@ -65,22 +67,132 @@
       </div>
     </section>
 
-    <section id="schedule" class="section">
-      <div class="container">
-        <div class="section-heading">
-          <div>
-            <p class="eyebrow">UP NEXT</p>
-            <h2>League Schedule</h2>
-          </div>
-          <button class="text-btn" onclick="showAllSchedule()">View all</button>
-        </div>
+    
+<section class="victorious-bowl-section">
+  <div class="victorious-bowl-card">
+    <div class="victorious-bowl-art">
+      <img src="vfa-victorious-bowl-s5.webp" alt="VFA Season 5 Victorious Bowl logo">
+    </div>
+    <div class="victorious-bowl-copy">
+      <p class="eyebrow">VFA FOOTBALL • SEASON 5</p>
+      <h2>VFA Victorious Bowl</h2>
+      <p>Welcome to Season 5 of VFA Football. Follow the Series, media coverage, streams, and everything leading up to the Victorious Bowl.</p>
+      <a class="button button-gold" href="#media">Explore VFA Media</a>
+    </div>
+  </div>
+</section>
 
-        <div id="schedule-list" class="schedule-list"></div>
-        <p id="schedule-note" class="small-note">
-          The schedule is ready to be replaced with your real VFA matchups in <code>app.js</code>.
+<section id="series2-story" class="section series2-story-section">
+  <div class="container">
+    <div class="section-heading">
+      <div>
+        <p class="eyebrow">VFA FOOTBALL • SERIES 2</p>
+        <h2>The Reckoning</h2>
+        <p class="section-subtitle">Records are low. The pressure is high. Everyone has something to prove.</p>
+      </div>
+    </div>
+
+    <div class="series2-hero-card">
+      <div class="series2-hero-copy">
+        <p>
+          It's Series 2, tensions are high and records are low. Everybody has something to prove.
+          With the Victorious Bowl waiting at the end, the question is simple: who is ready to take control?
         </p>
       </div>
-    </section>
+    </div>
+
+    <div class="series2-story-grid">
+      <article class="series2-story-card">
+        <div class="series2-team-logo">
+          <img src="houston-series2.webp" alt="Houston team logo">
+        </div>
+        <div>
+          <p class="story-label">THE FRONT-RUNNER</p>
+          <h3>Houston — Togoz</h3>
+          <p>
+            Will <strong>Houston's Togoz</strong> take the charge? He is putting up historic numbers,
+            sitting at <strong>16 touchdowns to just a single interception</strong>. The production is
+            impossible to ignore, and Togoz is looking to turn that historic start into a run all the
+            way to the Victorious Bowl.
+          </p>
+        </div>
+      </article>
+
+      <article class="series2-story-card">
+        <div class="series2-team-logo">
+          <img src="charlotte-series2.webp" alt="Charlotte team logo">
+        </div>
+        <div>
+          <p class="story-label">THE CHALLENGE</p>
+          <h3>Charlotte — Rico, Xim & Tfrx</h3>
+          <p>
+            But the people standing in Houston's path are dangerous. <strong>Charlotte's Rico</strong>
+            is a proven LFG quarterback who has already made multiple Legendary Bowls. Add
+            <strong>Xim</strong>, <strong>Tfrx</strong>, and the rest of Charlotte's elite players,
+            and we are going to be in for a season, folks.
+          </p>
+        </div>
+      </article>
+
+      <article class="series2-story-card underdog-story-card">
+        <div class="series2-team-logo">
+          <img src="minneapolis-series2.webp" alt="Minneapolis team logo">
+        </div>
+        <div>
+          <p class="story-label">THE UNDERDOG</p>
+          <h3>Minneapolis — Hex</h3>
+          <p>
+            But one story isn't mentioned nearly enough: <strong>Minneapolis and Hex</strong>.
+            They were <strong>15.5-point underdogs</strong> playing Antman, and somehow found a way
+            to come out with the win. They completely shattered expectations, even taking down
+            <strong>Charlotte</strong>.
+          </p>
+          <p>
+            Now Minneapolis has everyone's attention. The underdog story is no longer just a story —
+            it is a warning to everyone else in the league.
+          </p>
+        </div>
+      </article>
+    </div>
+
+    <div class="series2-closing">
+      <p class="eyebrow">THE SEASON AWAITS</p>
+      <p>
+        How this Series pans out will define the whole season. Houston has the numbers, Charlotte
+        has the experience, and Minneapolis has already shown that expectations can be shattered.
+        <strong>Good luck.</strong>
+      </p>
+    </div>
+  </div>
+</section>
+
+<section id="schedule" class="section schedule-section">
+  <div class="section-heading">
+    <div>
+      <p class="eyebrow">VFA FOOTBALL</p>
+      <h2>Series Schedule</h2>
+      <p class="section-subtitle">Each team plays every other team in its division once — 3 games per team.</p>
+    </div>
+  </div>
+
+  <div class="schedule-card">
+    <div class="schedule-card-header">
+      <div>
+        <h3>Finished Series Schedule</h3>
+        <p>Official schedule published by VFA.</p>
+      </div>
+      <a class="button button-outline" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vRKZrFIPzTVznvo8a6q2NCE98ZsXMu_Oxqo5e9MWYu_ucF01gS6uvkaNabdSsl3QuZQitGZnAk8Qy3u/pubhtml?gid=0&single=true" target="_blank" rel="noopener noreferrer">Open Full Schedule</a>
+    </div>
+    <div class="schedule-embed">
+      <iframe
+        src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRKZrFIPzTVznvo8a6q2NCE98ZsXMu_Oxqo5e9MWYu_ucF01gS6uvkaNabdSsl3QuZQitGZnAk8Qy3u/pubhtml?gid=0&single=true"
+        title="VFA Finished Series Schedule"
+        loading="lazy"
+        frameborder="0">
+      </iframe>
+    </div>
+  </div>
+</section>
 
     <section id="standings" class="section alt">
       <div class="container">
@@ -125,7 +237,96 @@
     </section>
   </main>
 
-  <footer>
+  
+<section id="media" class="section media-section">
+  <div class="section-heading">
+    <div>
+      <p class="eyebrow">VFA FOOTBALL</p>
+      <h2>Media</h2>
+      <p class="section-subtitle">Follow VFA through our media brands, game coverage, streams, and official league partners.</p>
+    </div>
+  </div>
+
+  <div class="media-layout">
+    <div class="media-card">
+      <div class="media-card-header">
+        <h3>VFA Media Network</h3>
+        <p>Coverage, analysis, stories, highlights, and league content from across VFA.</p>
+      </div>
+      <div class="media-grid">
+        <div class="media-item"><strong>MatchMetrics</strong><span>Game statistics and performance coverage.</span></div>
+        <div class="media-item"><strong>HighPoint</strong><span>League highlights and standout moments.</span></div>
+        <div class="media-item"><strong>ProFocus</strong><span>Player and team-focused coverage.</span></div>
+        <div class="media-item"><strong>EliteZone</strong><span>Elite performances and league features.</span></div>
+        <div class="media-item"><strong>TheGridiron</strong><span>Football news and league coverage.</span></div>
+        <div class="media-item"><strong>Headliner</strong><span>Big stories and headline moments.</span></div>
+        <div class="media-item"><strong>GameVision</strong><span>Visual game coverage and highlights.</span></div>
+        <div class="media-item"><strong>DynastyDrive</strong><span>Franchise and legacy-focused coverage.</span></div>
+        <div class="media-item"><strong>TheHunt</strong><span>Players, teams, and the chase for greatness.</span></div>
+        <div class="media-item"><strong>TheHouse</strong><span>VFA community and league culture.</span></div>
+      </div>
+    </div>
+
+    <div class="media-side-stack">
+      <div class="media-card stream-card">
+        <div class="media-card-header">
+          <h3>Streams</h3>
+          <p>Watch VFA games through the official stream team.</p>
+        </div>
+        <div class="stream-lead">
+          <strong>Lead Streamer</strong>
+          <span>Xaniyac</span>
+          <small>Discord</small>
+        </div>
+        <div class="stream-team">
+          <strong>Stream Team</strong>
+          <span>HTown4L</span>
+          <span>RSM_D14</span>
+        </div>
+      </div>
+
+      
+      <div class="media-card sponsor-card">
+        <div class="media-card-header">
+          <h3>Sponsors</h3>
+          <p>Official VFA sponsors and partners.</p>
+        </div>
+        <div class="sponsor-grid">
+          <a class="sponsor-item" href="#" aria-label="NitroHaven">
+            <img src="https://cdn.discordapp.com/icons/1546527277159022602/6726ed21c1f246fcdb041804f7b0e788.webp?size=2048" alt="NitroHaven logo">
+            <strong>NitroHaven</strong>
+          </a>
+          <div class="sponsor-item">
+            <img src="xspn-logo.webp" alt="XSPN logo">
+            <strong>XSPN</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section esports-section">
+  <div class="esports-card">
+    <div>
+      <p class="eyebrow">VFA ESPORTS</p>
+      <h2>VFA Support Server</h2>
+      <p>Need help, have a question, or need a ticket? Visit the VFA esports support server.</p>
+    </div>
+    <a class="button button-gold" href="https://discord.gg/RdBsKPQa5f" target="_blank" rel="noopener noreferrer">Open Support Server</a>
+  </div>
+</section>
+
+<section class="section credits-section">
+  <div class="credits-card">
+    <p class="eyebrow">VFA FOOTBALL</p>
+    <h2>Credits</h2>
+    <p><strong>Caleb</strong> — credited for the ideas and concepts that helped shape the VFA website and league experience.</p>
+  </div>
+</section>
+
+<footer>
     <div class="container footer-inner">
       <div>© <span id="year"></span> VFA Football</div>
       <div>Football Fusion Roblox League</div>

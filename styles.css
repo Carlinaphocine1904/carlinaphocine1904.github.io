@@ -144,3 +144,307 @@ footer { padding:28px 0; color:var(--muted); font-size:.8rem; }
   .teams-grid { grid-template-columns:1fr 1fr; }
   .footer-inner { flex-direction:column; }
 }
+
+
+/* VFA Series Schedule */
+.schedule-section .section-subtitle {
+  margin-top: 0.35rem;
+  opacity: 0.8;
+}
+.schedule-card {
+  margin-top: 1.5rem;
+  border: 1px solid rgba(246, 190, 100, 0.25);
+  border-radius: 16px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.03);
+}
+.schedule-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.1rem 1.25rem;
+  border-bottom: 1px solid rgba(246, 190, 100, 0.18);
+}
+.schedule-card-header h3 {
+  margin: 0;
+}
+.schedule-card-header p {
+  margin: 0.35rem 0 0;
+  opacity: 0.75;
+}
+.schedule-embed {
+  width: 100%;
+  height: 720px;
+  background: #fff;
+}
+.schedule-embed iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+@media (max-width: 700px) {
+  .schedule-card-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .schedule-embed {
+    height: 650px;
+  }
+}
+
+
+/* VFA Season 5 Victorious Bowl + Media */
+.victorious-bowl-section {
+  padding: 2rem 0;
+}
+.victorious-bowl-card {
+  display: grid;
+  grid-template-columns: minmax(220px, 0.85fr) minmax(280px, 1.15fr);
+  gap: 2rem;
+  align-items: center;
+  padding: 1.5rem;
+  border: 1px solid rgba(246, 190, 100, 0.3);
+  border-radius: 20px;
+  background: linear-gradient(135deg, rgba(246, 190, 100, 0.12), rgba(255,255,255,0.03));
+  overflow: hidden;
+}
+.victorious-bowl-art {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 220px;
+}
+.victorious-bowl-art img {
+  display: block;
+  max-width: 100%;
+  width: min(360px, 100%);
+  height: auto;
+  object-fit: contain;
+}
+.victorious-bowl-copy h2 {
+  margin: 0.25rem 0 0.75rem;
+}
+.victorious-bowl-copy p {
+  max-width: 650px;
+  opacity: 0.82;
+}
+.media-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(280px, 0.65fr);
+  gap: 1.25rem;
+  margin-top: 1.5rem;
+}
+.media-card, .esports-card, .credits-card {
+  border: 1px solid rgba(246, 190, 100, 0.22);
+  border-radius: 16px;
+  background: rgba(255,255,255,0.03);
+  padding: 1.25rem;
+}
+.media-card-header h3 {
+  margin: 0;
+}
+.media-card-header p {
+  margin: 0.35rem 0 0;
+  opacity: 0.72;
+}
+.media-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+.media-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  padding: 0.9rem;
+  border-radius: 12px;
+  background: rgba(246, 190, 100, 0.06);
+  border: 1px solid rgba(246, 190, 100, 0.12);
+}
+.media-item strong {
+  font-size: 1rem;
+}
+.media-item span {
+  font-size: 0.88rem;
+  opacity: 0.7;
+}
+.media-side-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+.stream-lead, .stream-team {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  margin-top: 1rem;
+}
+.stream-lead span {
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+.stream-lead small {
+  opacity: 0.65;
+}
+.stream-team {
+  padding-top: 0.9rem;
+  border-top: 1px solid rgba(246,190,100,0.14);
+}
+.stream-team span {
+  opacity: 0.82;
+}
+.sponsor-note {
+  margin-top: 1rem;
+  opacity: 0.72;
+}
+.esports-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.credits-card p:last-child {
+  opacity: 0.78;
+}
+@media (max-width: 800px) {
+  .victorious-bowl-card,
+  .media-layout {
+    grid-template-columns: 1fr;
+  }
+  .media-grid {
+    grid-template-columns: 1fr;
+  }
+  .esports-card {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+
+
+.sponsor-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+.sponsor-item {
+  min-height: 105px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.9rem;
+  padding: 0.9rem;
+  border-radius: 12px;
+  border: 1px solid rgba(246, 190, 100, 0.14);
+  background: rgba(246, 190, 100, 0.06);
+  color: inherit;
+  text-decoration: none;
+}
+.sponsor-item img {
+  width: 72px;
+  height: 72px;
+  object-fit: contain;
+  border-radius: 10px;
+}
+.sponsor-item strong {
+  font-size: 1.05rem;
+}
+
+
+/* VFA Series 2 Story */
+.series2-story-section {
+  background:
+    radial-gradient(circle at 15% 20%, rgba(246,190,100,.08), transparent 32%),
+    #0a0c0f;
+  border-top: 1px solid rgba(246,190,100,.12);
+  border-bottom: 1px solid rgba(246,190,100,.12);
+}
+.series2-hero-card {
+  margin-top: 1.25rem;
+  padding: 1.5rem;
+  border: 1px solid rgba(246,190,100,.28);
+  border-radius: 18px;
+  background: linear-gradient(135deg, rgba(246,190,100,.13), rgba(255,255,255,.025));
+  box-shadow: var(--shadow);
+}
+.series2-hero-copy p {
+  margin: 0;
+  max-width: 900px;
+  color: #d7d9de;
+  font-size: 1.12rem;
+  line-height: 1.8;
+}
+.series2-story-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.series2-story-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1.35rem;
+  border: 1px solid rgba(246,190,100,.2);
+  border-radius: 18px;
+  background: rgba(255,255,255,.03);
+  min-height: 100%;
+}
+.series2-story-card:hover {
+  border-color: rgba(246,190,100,.4);
+  transform: translateY(-2px);
+  transition: .2s ease;
+}
+.series2-team-logo {
+  min-height: 150px;
+  display: grid;
+  place-items: center;
+  border-radius: 14px;
+  background: radial-gradient(circle, rgba(255,255,255,.08), rgba(255,255,255,.015));
+}
+.series2-team-logo img {
+  width: 128px;
+  height: 128px;
+  object-fit: contain;
+  filter: drop-shadow(0 12px 18px rgba(0,0,0,.35));
+}
+.story-label {
+  margin: 0 0 .45rem;
+  color: var(--gold);
+  font-size: .7rem;
+  font-weight: 900;
+  letter-spacing: .15em;
+}
+.series2-story-card h3 {
+  margin: 0 0 .7rem;
+  font-size: 1.35rem;
+}
+.series2-story-card p:not(.story-label) {
+  margin: 0;
+  color: #c4c7ce;
+  line-height: 1.72;
+}
+.underdog-story-card {
+  background: linear-gradient(145deg, rgba(246,190,100,.09), rgba(255,255,255,.025));
+}
+.series2-closing {
+  margin-top: 1rem;
+  padding: 1.5rem;
+  border-left: 3px solid var(--gold);
+  background: rgba(246,190,100,.06);
+  border-radius: 0 14px 14px 0;
+}
+.series2-closing p:last-child {
+  margin: 0;
+  color: #d7d9de;
+  font-size: 1.08rem;
+  line-height: 1.8;
+}
+@media (max-width: 900px) {
+  .series2-story-grid {
+    grid-template-columns: 1fr;
+  }
+}
